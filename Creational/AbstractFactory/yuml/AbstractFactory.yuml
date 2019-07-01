@@ -1,0 +1,7 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Abstract Factory - Design Pattern{bg:cornsilk}]
+[Parser|parser(string):array {bg:limegreen}]<-[CsvParser]
+[Parser|parser(string):array {bg:limegreen}]<-[JsonParser]
+[ParserFactory|createCsvParser(bool): CsvParser;createJsonParser(): JsonParser]
