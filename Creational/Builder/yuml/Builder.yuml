@@ -1,0 +1,12 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Builder - Design Pattern{bg:cornsilk}]
+[BuilderInterface|createVehicle();addWheel();addEngine();addDoors();getVehicle() {bg:limegreen}]<-[TruckBuilder| private $truck |createVehicle();addWheel();addEngine();addDoors();getVehicle() ]
+[BuilderInterface|createVehicle();addWheel();addEngine();addDoors();getVehicle() {bg:limegreen}]<-[CarBuilder| private $car |createVehicle();addWheel();addEngine();addDoors();getVehicle() ]
+[Vehicle|private $data|setPart(key,value) {bg:royalblue}]<-[Car]
+[Vehicle|private $data|setPart(key,value) {bg:royalblue}]<-[Truck]
+[Director|build(builder)]
+[Engine]
+[Wheel]
+[Door]
