@@ -1,5 +1,5 @@
 <?php
-namespace Test;
+namespace PHPDesignPattern\Test;
 
 use PHPDesignPattern\Creational\AbstractFactory\CsvParser;
 use PHPDesignPattern\Creational\AbstractFactory\JsonParser;
